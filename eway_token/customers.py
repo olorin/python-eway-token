@@ -104,7 +104,7 @@ class EwayCustomer(object):
 
     def process_payment(self, amount, invoice_ref, invoice_description, cvn=None):
         '''Processes a payment from the customer of amount IN DOLLARS 
-        (either an integral number of dollars or a Decimal object.
+        (either an integral number of dollars or a Decimal object).
         cvn is optional (but strongly recommended).'''
         cents = int(amount*100)
         res = self.client.payments.process(self.customer_id, 
