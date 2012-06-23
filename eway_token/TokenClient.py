@@ -32,7 +32,7 @@ class CustomerManager(DataManager):
         'CCExpiryYear',
         ]
     required_fields = [
-        'Title',
+#        'Title',
         'FirstName',
         'LastName',
         'Country',
@@ -56,7 +56,6 @@ class CustomerManager(DataManager):
         params['CCExpiryMonth'] = customer['CCExpiryMonth']
         params['CCExpiryYear'] = customer['CCExpiryYear']
         return self.client.service.UpdateCustomer(**params)
-
 
     def query(self, customer_id):
         return self.client.service.QueryCustomer(managedCustomerID=customer_id)

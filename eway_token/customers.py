@@ -62,7 +62,6 @@ class EwayCustomer(object):
     @classmethod
     def create(cls, 
                client, 
-               title, 
                first_name, 
                last_name, 
                country, 
@@ -70,6 +69,7 @@ class EwayCustomer(object):
                cc_expiry_month, 
                cc_expiry_year, 
                cc_name_on_card, 
+               title=None,
                address=None, 
                suburb=None, 
                state=None, 
