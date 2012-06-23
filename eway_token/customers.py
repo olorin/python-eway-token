@@ -24,7 +24,7 @@ class EwayCustomer(object):
         'CCExpiryMonth' : 'cc_expiry_month',
         'CCExpiryYear' : 'cc_expiry_year',
         }
-    field_names = dict(map(lambda p: (p[0],p[1]), member_names.items()))
+    field_names = dict(map(lambda p: (p[1],p[0]), member_names.items()))
     query_member_names = {
         'CustomerTitle' : 'title',
         'CustomerFirstName' : 'first_name',
@@ -138,7 +138,7 @@ class EwayCustomer(object):
         self.customer_id = self.client.customers.create(params) 
 
     def _build_param_dict(self):
-        return dict(zip(self.field_names.keys(), map(lambda k: self.__dict__[k], self.field_names.values())))
+        return dict(zip(self.member_names.keys(), map(lambda k: self.__dict__[k], self.member_names.values())))
         
     
         
