@@ -19,6 +19,7 @@ Example usage
         live=True)
 
     customer = EwayCustomer.create(client, 
+        title='Mr.',
         first_name='Foo', 
         last_name='Bar', 
         country='au', 

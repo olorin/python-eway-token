@@ -32,7 +32,7 @@ class CustomerManager(DataManager):
         'CCExpiryYear',
         ]
     required_fields = [
-#        'Title',
+        'Title',
         'FirstName',
         'LastName',
         'Country',
