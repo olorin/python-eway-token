@@ -58,7 +58,7 @@ setup(
     data_files = data_files,
     classifiers = ['Development Status :: 4 - Beta',
                    'Intended Audience :: Developers',
-                   'License :: OSI Approved :: MIT Expat License',
+                   'License :: OSI Approved :: MIT License',
                    'Operating System :: OS Independent',
                    'Programming Language :: Python',
                    'Topic :: Software Development :: Libraries :: Python Modules'])
